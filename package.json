@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "OpenCode plugin that remembers the last selected model and makes it the default on the next launch.",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
   },
   "files": [
-    "src",
+    "dist",
     "README.md",
     "LICENSE"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
   "keywords": [
     "opencode",
     "opencode-plugin",
@@ -30,5 +39,9 @@
   "homepage": "https://github.com/rodionkopenkin867-ship-it/opencode-last-model#readme",
   "dependencies": {
     "@opencode/plugin": "^2.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
   }
 }
