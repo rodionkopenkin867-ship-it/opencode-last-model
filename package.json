@@ -1,0 +1,34 @@
+{
+  "name": "opencode-last-model",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that remembers the last selected model and makes it the default on the next launch.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "plugin",
+    "model",
+    "default-model"
+  ],
+  "license": "MIT",
+  "author": "Rodion Kopenkin <rodion.kopenkin867@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodionkopenkin867-ship-it/opencode-last-model.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rodionkopenkin867-ship-it/opencode-last-model/issues"
+  },
+  "homepage": "https://github.com/rodionkopenkin867-ship-it/opencode-last-model#readme",
+  "dependencies": {
+    "@opencode/plugin": "^2.2.5"
+  }
+}
