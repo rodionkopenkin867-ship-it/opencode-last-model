@@ -10,7 +10,13 @@ This plugin closes that gap: whenever you switch models in a root session, it wr
 
 ## Install
 
-Add the plugin to your **global** OpenCode config (`~/.config/opencode/opencode.json` or `opencode.jsonc`):
+OpenCode installs plugins from npm:
+
+```sh
+opencode plugin add opencode-last-model
+```
+
+Or add the package to the `plugins` array in your **global** config (`~/.config/opencode/opencode.json` or `opencode.jsonc`):
 
 ```jsonc
 {
